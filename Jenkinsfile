@@ -16,8 +16,8 @@
 pipeline {
     agent any 
     tools{
-        jdk 'JDK-17'
-        maven 'MAVEN-3.9.9'
+        jdk 'JDK-11'
+        maven 'MAVEN-3.8.8'
     }
     stages{
         stage('SCM') {
