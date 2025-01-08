@@ -29,6 +29,7 @@ pipeline {
             steps {
                 sh 'mvn --version'
             }
+        }
 
         stage('validate'){
             steps {
@@ -38,4 +39,3 @@ pipeline {
 
         }
     }
-}
