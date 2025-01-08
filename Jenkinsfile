@@ -27,9 +27,15 @@ pipeline {
         }
         stage('Version') {
             steps {
-                sh 'java --version'
                 sh 'mvn --version'
             }
+
+        stage('validate'){
+            steps {
+                sh 'mvn validate'
+            }
+        }
+
         }
     }
 }
